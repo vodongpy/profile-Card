@@ -3,3 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background: linear-gradient(135deg, orange 60%, cyan);
+    height: 100vh;
+    overflow: hidden;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.open-modal-btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    background-color: chartreuse;
+    font-size: 15px;
+}
+.open-modal-btn:hover {
+    cursor: pointer;
+    transform: scale(90%);
+}
+.modal__inner {
+    width: 200px;
+    position: relative;
+    top: 50%;
+    margin: auto;
+    border: 2px solid rgb(24, 77, 248);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.modal__header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background-color: rgb(240, 103, 12);
+   color: white;
+}
+.modal__header i {
+    padding: 2px;
+}
+.modal__body{
+   padding: 15px;
+   background-color: white;
+}
+.modal__footer {
+     padding: 15px;
+     text-align: right;
+     background-color: white;
+}
+.modal__footer button{
+    padding: 4px 6px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    left: 10px;
+    background-color: rgb(240, 103, 12);
+}
+.hide {
+    display: none;
+}
